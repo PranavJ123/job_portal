@@ -1,0 +1,11 @@
+.form-control{
+    background-color:darkgray;
+}
+
+.name{
+    font-weight: normal;
+}
+
+label {
+    margin-bottom: 0rem !important;
+}

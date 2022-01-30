@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Header from './Header';
+import Upper from './Upper';
 import reportWebVitals from './reportWebVitals';
+import App from './Form';
+import {BrowserRouter as Router,Routes,Route,Link} from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+    <Header />
+    
+      <Routes>
+    <Route exact path='/' element={<Upper />}></Route>
+    <Route exact path='/profile' element={<App />}></Route>
+    
+    </Routes>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
